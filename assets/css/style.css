@@ -389,6 +389,23 @@ img.skill-icon {
 /* ---------- Blog ---------- */
 .post-meta { display: flex; gap: 12px; color: var(--text-faint); font-size: .82rem; }
 
+/* ---------- Vídeos (canal do YouTube) ---------- */
+.video-card .card-thumb { height: auto; aspect-ratio: 16 / 9; padding: 0; background: #000; }
+.video-card .card-thumb iframe { width: 100%; height: 100%; border: 0; display: block; }
+.youtube-banner {
+  background: linear-gradient(120deg, rgba(255,0,51,.14), rgba(255,0,51,.04));
+  border: 1px solid rgba(255,0,51,.35);
+  border-radius: var(--radius);
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.youtube-banner p { color: var(--text-muted); margin: 4px 0 0; }
+.youtube-banner .btn { flex-shrink: 0; }
+
 /* ---------- Loja / Clearance ---------- */
 .clearance-banner {
   background: linear-gradient(120deg, rgba(255,106,61,.16), rgba(255,106,61,.04));
