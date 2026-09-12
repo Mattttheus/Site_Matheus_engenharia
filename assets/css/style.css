@@ -99,14 +99,14 @@ h1, h2, h3, h4 { font-family: var(--font-display); margin: 0 0 .5em; line-height
 }
 .brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; }
 .brand-mark {
-  display: grid;
-  place-items: center;
+  display: block;
+  box-sizing: border-box;
   width: 36px; height: 36px;
-  border-radius: 10px;
+  border-radius: 50%;
+  object-fit: cover;
   background: var(--gradient);
-  color: #fff;
-  font-size: .85rem;
-  font-weight: 700;
+  padding: 2px;
+  box-shadow: 0 0 0 1px rgba(155, 107, 255, .35);
 }
 .brand-name { font-size: 1.05rem; }
 
