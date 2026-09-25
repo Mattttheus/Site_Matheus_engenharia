@@ -167,6 +167,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); margin: 0 0 .5em; line-height
 .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
 .hero h1 { font-size: clamp(2.2rem, 4vw, 3.4rem); }
 .hero .highlight { background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero .hero-roles { display: block; margin-top: .6em; font-size: clamp(1.05rem, 1.7vw, 1.35rem); line-height: 1.5; font-weight: 500; color: var(--text-muted); }
 .hero p.lead { color: var(--text-muted); font-size: 1.15rem; max-width: 520px; }
 .hero-actions { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
 
