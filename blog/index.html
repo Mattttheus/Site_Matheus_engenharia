@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/Site_Matheus_engenharia/assets/css/style.css?v=1790352008">
+<link rel="stylesheet" href="/Site_Matheus_engenharia/assets/css/style.css?v=1790353973">
 </head>
 <body>
 <header class="site-header">
@@ -23,6 +23,7 @@
     </button>
     <nav class="site-nav" id="siteNav">
       <a href="/Site_Matheus_engenharia/index.html#sobre" class="">Início</a>
+      <a href="/Site_Matheus_engenharia/index.html#aviacao">Aviação</a>
       <a href="/Site_Matheus_engenharia/index.html#projetos">Projetos</a>
       <a href="/Site_Matheus_engenharia/blog/index.html" class="active">Blog</a>
       <a href="/Site_Matheus_engenharia/loja/index.html" class="">Loja</a>
@@ -31,7 +32,14 @@
   </div>
 </header>
 
-<section class="page-hero">
+<section class="page-hero page-hero-video">
+  <div class="bg-video" aria-hidden="true" style="background-image: url('../assets/video/helicoptero-h125.jpg')">
+    <video autoplay muted loop playsinline preload="metadata" poster="../assets/video/helicoptero-h125.jpg">
+      <source src="../assets/video/helicoptero-h125.webm" type="video/webm">
+      <source src="../assets/video/helicoptero-h125.mp4" type="video/mp4">
+    </video>
+  </div>
+  <p class="media-credit">Vídeo: Airbus H125 — <a href="https://commons.wikimedia.org/wiki/File:Airbus_Helicopters_H125_(D-HAIB)_(1).webm" target="_blank" rel="noopener">Fiver, der Hellseher, CC BY-SA 4.0</a></p>
   <div class="container">
     <span class="eyebrow">Blog</span>
     <h1>Notas sobre manutenção aeronáutica, automação e tecnologia</h1>
@@ -43,8 +51,10 @@
   <div class="container">
           <div class="grid grid-3">
                   <article class="card">
-            <div class="card-thumb">Automação</div>
-            <div class="card-body">
+                          <div class="card-thumb card-thumb-img card-thumb-photo">
+                <img src="../assets/img/aviacao/manut-dados.jpg" alt="" loading="lazy">
+              </div>
+                        <div class="card-body">
               <div class="post-meta">
                 <span>24 set 2026</span>
                 <span>·</span>
@@ -58,8 +68,10 @@
             </div>
           </article>
                   <article class="card">
-            <div class="card-thumb">Planejamento</div>
-            <div class="card-body">
+                          <div class="card-thumb card-thumb-img card-thumb-photo">
+                <img src="../assets/img/aviacao/manut-towed.jpg" alt="" loading="lazy">
+              </div>
+                        <div class="card-body">
               <div class="post-meta">
                 <span>17 set 2026</span>
                 <span>·</span>
@@ -73,8 +85,10 @@
             </div>
           </article>
                   <article class="card">
-            <div class="card-thumb">Aeronavegabilidade</div>
-            <div class="card-body">
+                          <div class="card-thumb card-thumb-img card-thumb-photo">
+                <img src="../assets/img/aviacao/manut-inspecao.jpg" alt="" loading="lazy">
+              </div>
+                        <div class="card-body">
               <div class="post-meta">
                 <span>10 set 2026</span>
                 <span>·</span>
@@ -88,8 +102,8 @@
             </div>
           </article>
                   <article class="card">
-            <div class="card-thumb">Arquitetura</div>
-            <div class="card-body">
+                          <div class="card-thumb">Arquitetura</div>
+                        <div class="card-body">
               <div class="post-meta">
                 <span>01 set 2026</span>
                 <span>·</span>
@@ -103,8 +117,8 @@
             </div>
           </article>
                   <article class="card">
-            <div class="card-thumb">Banco de Dados</div>
-            <div class="card-body">
+                          <div class="card-thumb">Banco de Dados</div>
+                        <div class="card-body">
               <div class="post-meta">
                 <span>20 ago 2026</span>
                 <span>·</span>
@@ -118,8 +132,8 @@
             </div>
           </article>
                   <article class="card">
-            <div class="card-thumb">Carreira</div>
-            <div class="card-body">
+                          <div class="card-thumb">Carreira</div>
+                        <div class="card-body">
               <div class="post-meta">
                 <span>05 ago 2026</span>
                 <span>·</span>
@@ -134,6 +148,54 @@
           </article>
               </div>
       </div>
+</section>
+
+<section class="section pt-sm">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Aviação em vídeo</span>
+      <h2>Helicópteros em operação</h2>
+      <p>Modelos da mesma família dos que acompanho no planejamento de manutenção. Vídeos ilustrativos do Wikimedia Commons.</p>
+    </div>
+    <div class="grid grid-3">
+              <article class="card video-card">
+          <div class="card-thumb">
+            <video controls muted loop playsinline preload="none" poster="../assets/video/helicoptero-h125.jpg">
+              <source src="../assets/video/helicoptero-h125.webm" type="video/webm">
+              <source src="../assets/video/helicoptero-h125.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Airbus H125 em voo</h3>
+            <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Airbus_Helicopters_H125_(D-HAIB)_(1).webm" target="_blank" rel="noopener">Vídeo: Fiver, der Hellseher · CC BY-SA 4.0</a>
+          </div>
+        </article>
+              <article class="card video-card">
+          <div class="card-thumb">
+            <video controls muted loop playsinline preload="none" poster="../assets/video/helicoptero-ec135.jpg">
+              <source src="../assets/video/helicoptero-ec135.webm" type="video/webm">
+              <source src="../assets/video/helicoptero-ec135.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Eurocopter EC135 decolando</h3>
+            <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Eurocopter_ec-135.ogv" target="_blank" rel="noopener">Vídeo: Henry Kellner · CC BY-SA 4.0</a>
+          </div>
+        </article>
+              <article class="card video-card">
+          <div class="card-thumb">
+            <video controls muted loop playsinline preload="none" poster="../assets/video/helicoptero-as350.jpg">
+              <source src="../assets/video/helicoptero-as350.webm" type="video/webm">
+              <source src="../assets/video/helicoptero-as350.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>AS350 Esquilo em manobra</h3>
+            <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Air%2B_AS350_F-GHPH_29sep14_LFBO.webm" target="_blank" rel="noopener">Vídeo: Gyrostat · CC BY-SA 4.0</a>
+          </div>
+        </article>
+          </div>
+  </div>
 </section>
 
 <section class="container pt-sm">
