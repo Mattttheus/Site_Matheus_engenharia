@@ -531,3 +531,36 @@ img.skill-icon {
   .clearance-banner { flex-direction: column; align-items: flex-start; }
   .section { padding-block: 56px; }
 }
+
+/* ---------- Projeto em destaque: HeliSense 3D ---------- */
+.site-nav a.nav-destaque { color: var(--clearance); font-weight: 600; }
+.site-nav a.nav-destaque:hover { color: #ff9b78; }
+.btn-destaque { border-color: rgba(255, 106, 61, .55); color: #ffb39a; }
+.btn-destaque:hover { border-color: var(--clearance); box-shadow: 0 0 0 1px var(--clearance) inset; }
+.featured {
+  background: radial-gradient(ellipse at 85% 0%, rgba(255, 106, 61, .13), transparent 55%), var(--bg);
+  border-block: 1px solid var(--border);
+  scroll-margin-top: 72px;
+}
+.featured-inner { display: grid; grid-template-columns: .95fr 1.05fr; gap: 48px; align-items: center; }
+.featured-inner > * { min-width: 0; }
+.featured .eyebrow { color: var(--clearance); }
+.featured h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); margin-block: 10px 16px; }
+.featured-text p { color: var(--text-muted); margin-bottom: 14px; }
+.featured-text p.featured-lead { color: var(--text); font-size: 1.08rem; }
+.featured-points { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 4px; list-style: none; padding: 0; }
+.featured-points li { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 14px; font-size: .86rem; color: var(--text-muted); }
+.featured-points strong { display: block; color: var(--text); font-family: var(--font-display); font-size: 1rem; margin-bottom: 2px; }
+.featured-text p.featured-note { font-size: .78rem; color: var(--text-faint); margin: 18px 0 0; }
+.featured-media { position: relative; padding-bottom: 64px; }
+.featured-shot { display: block; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); background: var(--bg-elevated); }
+.featured-shot img { display: block; width: 100%; height: auto; transition: transform .4s ease; }
+.featured-shot:hover img { transform: scale(1.03); }
+.featured-shot:first-child { box-shadow: var(--shadow), 0 0 0 1px rgba(255, 106, 61, .3), 0 18px 40px -12px rgba(255, 106, 61, .35); }
+.featured-shot-small { position: absolute; width: 46%; right: 0; bottom: 0; }
+@media (max-width: 900px) { .featured-inner { grid-template-columns: 1fr; } }
+@media (max-width: 640px) {
+  .featured-points { grid-template-columns: 1fr; }
+  .featured-media { padding-bottom: 0; }
+  .featured-shot-small { position: static; width: 100%; margin-top: 14px; }
+}
